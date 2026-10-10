@@ -1,0 +1,69 @@
+# === Базові файли Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === Віртуальні середовища (uv / venv / pipenv) ===
+.venv/
+venv/
+ENV/
+env/
+.env
+.openai*
+
+# === Організація роботи з uv ===
+# Блокування залежностей зазвичай комітять у репозиторій додатка, 
+# але для перевикористовуваної бібліотеки uv.lock можна ігнорувати,
+# хоча uv рекомендує його залишати. Якщо хочете ігнорувати — розкоментуйте:
+# uv.lock
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# === Специфічні директорії для Deep Learning результатів ===
+# Ігноруємо локальні копії датасетів, вагів моделей та архівів,
+# щоб випадково не завантажити гігабайти на GitHub
+data/
+datasets/
+checkpoints/
+weights/
+outputs/
+results/
+*.zip
+*.tar.gz
+*.7z
+
+# === IDE та редактори коду (VS Code / Zed) ===
+.vscode/
+.zed/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+
+# === Системні файли ===
+.DS_Store
+Thumbs.db
